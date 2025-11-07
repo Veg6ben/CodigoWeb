@@ -14,3 +14,4 @@
 
 ## Progreso:
 - Todos los pasos completados. La página ha sido actualizada para promocionar servicios de desarrollo web.
+- Cambiado "Integración de APIs" por "Desarrollo de E-commerce" en la sección de características.
