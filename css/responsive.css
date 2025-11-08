@@ -1,0 +1,617 @@
+/* Estilos responsivos adicionales */
+
+/* Ajustes para móviles muy pequeños (≤576px) */
+@media (max-width: 500px) {
+    /* Header */
+    .header .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .header .image-container img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Ajustes para la sección basic-4 (Download) */
+    .basic-4 {
+        padding: 3rem 0;
+    }
+
+    .basic-4 .text-container {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .basic-4 h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .basic-4 .p-large {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .basic-4 .btn-solid-lg {
+        width: 100%;
+        margin-bottom: 0.75rem;
+        display: block;
+    }
+
+    .basic-4 .image-container {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .basic-4 .image-container img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .basic-4 .row {
+        flex-direction: column-reverse;
+    }
+
+    .basic-4 .col-lg-6 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Overrides para prevenir overflow horizontal en dispositivos móviles */
+@media (max-width: 767px) {
+    /* Forzar que imágenes no sobresalgan del viewport */
+    .header .image-container img {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+    /* Evitar scroll horizontal si algún elemento accidentalmente sobresale */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Asegurar que el navbar colapsado no provoque overflow */
+    .navbar-custom,
+    .navbar-custom .navbar-collapse {
+        box-sizing: border-box;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .basic-4 {
+        padding: 4rem 0;
+    }
+
+    .basic-4 .text-container {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .basic-4 .btn-solid-lg {
+        margin: 0.5rem;
+        width: calc(50% - 1rem);
+        display: inline-block;
+    }
+
+    .basic-4 .image-container img {
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .basic-4 .row {
+        flex-direction: column-reverse;
+    }
+
+    .basic-4 .col-lg-6 {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .basic-4 {
+        padding: 4rem 0;
+    }
+
+    .basic-4 .text-container {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .basic-4 .btn-solid-lg {
+        margin: 0.5rem;
+        width: auto;
+        display: inline-block;
+    }
+
+    .basic-4 .image-container img {
+        max-width: 450px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .basic-4 {
+        padding: 6.75rem 0;
+    }
+
+    .basic-4 .text-container {
+        padding-top: 2rem;
+    }
+
+    .basic-4 .image-container {
+        margin-left: 2rem;
+    }
+
+    .basic-4 .image-container img {
+        max-width: 100%;
+    }
+}
+
+/* Header responsivo */
+@media (max-width: 767px) {
+    .header .header-content {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .header .p-large {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .header .text-container {
+        margin-bottom: 2rem;
+    }
+
+    .header .image-container {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .header .image-container img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .header #js-rotating {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header .header-content {
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .header .image-container img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Navbar responsivo */
+@media (max-width: 767px) {
+    .navbar-custom .navbar-nav {
+        margin-top: 1rem;
+    }
+
+    .navbar-custom .nav-item .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .navbar-custom .dropdown-menu {
+        background-color: #4633af;
+        border: none;
+    }
+
+    .navbar-custom .dropdown-item {
+        color: #fff;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-custom .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #00c9db;
+    }
+}
+
+/* Testimonials responsivo */
+@media (max-width: 767px) {
+    .slider-1 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .slider-1 .swiper-container {
+        width: 95%;
+    }
+
+    .slider-1 .swiper-button-prev,
+    .slider-1 .swiper-button-next {
+        display: none;
+    }
+
+    .slider-1 .card {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .slider-1 .testimonial-text {
+        font-size: 0.9rem;
+    }
+
+    .slider-1 .testimonial-author {
+        font-size: 0.9rem;
+    }
+}
+
+/* Features responsivo */
+@media (max-width: 767px) {
+    .tabs {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .tabs h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .tabs .nav-tabs {
+        flex-direction: column;
+    }
+
+    .tabs .nav-link {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .tabs .tab-content {
+        padding-top: 2rem;
+    }
+
+    .tabs .card {
+        margin-bottom: 1rem;
+    }
+
+    .tabs .card-title {
+        font-size: 1rem;
+    }
+
+    .tabs .card .card-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .tabs .card .card-icon .fas {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    /* Planes de desarrollo web responsivos */
+    .tabs .row .col-md-4 {
+        margin-bottom: 2rem;
+    }
+
+    .tabs .card.bg-dark {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+
+    .tabs .badge-large {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .tabs h3.card-title {
+        font-size: 1.2rem;
+    }
+
+    .tabs .card-body .mb-4 span.h2 {
+        font-size: 1.5rem;
+    }
+
+    .tabs .card-body ul li {
+        font-size: 0.9rem;
+    }
+
+    .tabs .btn-solid-lg {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Preguntas frecuentes responsivas */
+    .tabs .row.mt-6 .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .tabs .card.bg-secondary {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .tabs .row .col-md-4 {
+        margin-bottom: 2rem;
+    }
+
+    .tabs .card.bg-dark {
+        max-width: 100%;
+    }
+
+    .tabs .row.mt-6 .col-md-6 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Details responsivo */
+@media (max-width: 767px) {
+    .basic-2,
+    .basic-3 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .basic-2 img,
+    .basic-3 img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 2rem auto;
+        display: block;
+    }
+
+    .basic-2 .text-container,
+    .basic-3 .text-container {
+        text-align: center;
+    }
+
+    .basic-2 h3,
+    .basic-3 h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .basic-2 .btn-solid-reg,
+    .basic-3 .btn-solid-reg {
+        margin-top: 1rem;
+    }
+}
+
+/* Lightbox responsivo */
+@media (max-width: 767px) {
+    .lightbox-basic {
+        padding: 2rem 1rem;
+        margin: 1rem auto;
+    }
+
+    .lightbox-basic img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .lightbox-basic h3 {
+        font-size: 1.5rem;
+    }
+
+    .lightbox-basic table {
+        font-size: 0.9rem;
+    }
+}
+
+/* Screenshots responsivo */
+@media (max-width: 767px) {
+    .slider-2 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .slider-2 .swiper-container {
+        width: 95%;
+    }
+
+    .slider-2 .swiper-button-prev,
+    .slider-2 .swiper-button-next {
+        display: none;
+    }
+}
+
+/* Statistics responsivo */
+@media (max-width: 767px) {
+    .counter {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .counter #counter .cell {
+        width: 45%;
+        margin: 0 2% 2rem 2%;
+    }
+
+    .counter #counter .counter-value {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .counter #counter .counter-info {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .counter #counter .cell {
+        width: 22%;
+        margin: 0 1% 2rem 1%;
+    }
+}
+
+/* Contact responsivo */
+@media (max-width: 767px) {
+    .form {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .form h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .form .list-unstyled {
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .form .list-unstyled li {
+        margin-bottom: 0.5rem;
+    }
+
+    .form .col-lg-6.offset-lg-3 {
+        padding: 0 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-control-input,
+    .form-control-textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer responsivo */
+@media (max-width: 767px) {
+    .footer {
+        padding-top: 3rem;
+        text-align: center;
+    }
+
+    .footer .footer-col {
+        margin-bottom: 2rem;
+    }
+
+    .footer h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer .list-unstyled li {
+        font-size: 0.9rem;
+    }
+
+    .footer .fa-stack {
+        margin: 0 0.25rem 0.5rem 0.25rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer .footer-col {
+        width: 45%;
+        margin: 0 2.5% 2rem 2.5%;
+    }
+
+    .footer .footer-col.middle {
+        width: 95%;
+    }
+}
+
+/* Copyright responsivo */
+@media (max-width: 767px) {
+    .copyright {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .copyright .p-small {
+        font-size: 0.8rem;
+    }
+}
+
+/* Botón back to top responsivo */
+@media (max-width: 767px) {
+    a.back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-size: 1rem 1rem;
+    }
+}
+
+/* Preloader responsivo */
+@media (max-width: 767px) {
+    .spinner {
+        width: 3rem;
+        height: 1rem;
+        margin: -0.5rem 0 0 -1.5rem;
+    }
+
+    .spinner > div {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+/* Mejoras específicas para botones en detalles (móvil) */
+@media (max-width: 576px) {
+    /* Hacer que los botones en las secciones Details (basic-2 / basic-3) sean más legibles
+       en pantallas pequeñas: reducir letter-spacing, ajustar tamaño y permitir wrapping. */
+    .basic-2 .text-container a.btn-solid-reg,
+    .basic-3 .text-container a.btn-solid-reg,
+    .basic-2 .text-container a.btn-solid-reg.popup-with-move-anim,
+    .basic-3 .text-container a.btn-solid-reg.popup-with-move-anim {
+        font-size: 0.95rem;
+        line-height: 1.2;
+        letter-spacing: 0.6px;
+        padding: 0.55rem 1rem;
+        white-space: normal;
+        word-break: break-word;
+        display: inline-block;
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: visible;
+    }
+
+    /* Añadir algo de padding lateral a los contenedores para que el botón no pegue a los bordes */
+    .basic-2 .text-container,
+    .basic-3 .text-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
