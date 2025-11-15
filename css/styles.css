@@ -36,7 +36,7 @@ html {
 
 body, p {
 	color: #f1f1f8; 
-	font: 00 0.875rem/1.375rem "Open Sans", sans-serif;
+	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
 
 .p-large {
@@ -568,6 +568,18 @@ input[type='checkbox'] {
 	}
 }
 
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6);
+	}
+	50% {
+		text-shadow: 0 0 30px rgba(0,201,219,1), 0 0 60px rgba(0,201,219,0.8);
+	}
+	100% {
+		text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6);
+	}
+}
+
 
 /*************************/
 /*     02. Preloader     */
@@ -648,6 +660,7 @@ input[type='checkbox'] {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	-webkit-backface-visibility: hidden;
 	transition: transform 1s ease;
+	animation: glow 2s infinite;
 }
 
 .navbar-custom .navbar-brand.logo-image img:hover {
@@ -792,15 +805,16 @@ input[type='checkbox'] {
 
 .header h1 {
 	margin-bottom: 0;
-
+	text-align: center !important;
 }
 
 .header #js-rotating {
 	color: #40e0ee;
 	display: flex;
 	flex-wrap: wrap;
-	width: 30rem;
-	text-align: right;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
 }
 
 .header .p-large {
@@ -1269,18 +1283,40 @@ input[type='checkbox'] {
 	position: static;
 	width: 90%;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .slider-2 .swiper-slide {
-	padding: 0 180px; /* Añade espaciado horizontal entre las imágenes */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+.slider-2 .swiper-slide img,
 .slider-2 .swiper-slide .img-fluid {
-	width: 350px; /* Aumenta el ancho de las imágenes a 600px para mayor tamaño */
-	height: auto; /* Mantiene la proporción */
-	max-width: none; /* Permite que exceda el 100% si es necesario */
-	margin: 50px 0;
-	 }
+	width: 600px !important;
+	height: auto !important;
+	max-width: 100% !important;
+	margin: 50px auto;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.slider-2 .swiper-slide img,
+	.slider-2 .swiper-slide .img-fluid {
+		width: 90% !important;
+		max-width: 400px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.slider-2 .swiper-slide img,
+	.slider-2 .swiper-slide .img-fluid {
+		width: 85% !important;
+		max-width: 300px !important;
+		margin: 30px auto;
+	}
+}
 
 .slider-2 .swiper-button-prev,
 .slider-2 .swiper-button-next {
@@ -1568,6 +1604,8 @@ a:hover.back-to-top {
 
 .swiper-wrapper .img{
 	align-items: center;
-	margin: 10px;
+	margin: 0;
+	width: 100%;
+	
 }
 
