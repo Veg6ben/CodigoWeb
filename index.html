@@ -32,6 +32,41 @@
 
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #40b96c;
+        }
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                bottom: 15px;
+                left: 15px;
+            }
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -72,13 +107,9 @@
 
 
                 <!-- Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETALLES</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TÉRMINOS Y CONDICIONES</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">POLÍTICA DE PRIVACIDAD</span></a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true">DETALLES</a>
+     
                 </li>
                 <!-- end of dropdown menu -->
 
@@ -114,7 +145,7 @@
                         <h1 class="text-center">DESARROLLO WEB <br>PARA <span id="js-rotating">EMPRESAS, NEGOCIOS, PORTAFOLIOS, EMPRENDIMIENTOS</span></h1>
                         <p class="p-large">Ofrecemos servicios profesionales de desarrollo web para crear páginas responsivas y modernas que se adaptan a todos los dispositivos. ¡Contáctanos hoy!</p>
                         <div class="text-container">
-                        <a class="btn-solid-lg page-scroll" href="#contact"><i class="fas fa-envelope"></i>CONTACTAR</a>
+                        <a class="btn-solid-lg page-scroll" href="https://wa.me/573003990938"><i class="fas fa-envelope"></i>CONTACTAR</a>
                         <a class="btn-solid-lg page-scroll" href="#features"><i class="fas fa-eye"></i>VER SERVICIOS</a>
                         </div>
                     </div> <!-- end of col -->
@@ -151,12 +182,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-code"></i>DESARROLLO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-search"></i>OPTIMIZACIÓN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-tools"></i>MANTENIMIENTO</a>
-                    </li>
+                  
                 </ul>
                 <!-- end of tabs links -->
 
@@ -171,8 +197,8 @@
                         <span class="mb-3 text-center h1 px-4 py-2 font-weight-bold d-block" style="background-color: #17a2b8; color: white;">Planes de Desarrollo Web</span>
                             <div class="container py-5">
                                 <div class="row">
-                                    <div class="col-12 text-center mb-5">
-                                        <h2 class=" mb-4" style="color: #17a2b8; letter-spacing: -0.5px; font-weight: 700; font-size: 2.5rem;">ELIGE EL QUE MAS SE ADAPTE A TÍ</h2>
+                                    <div class="col-12 text-center mb-5">    
+                                        <h2 style="color: #00c9db; letter-spacing: -0.5px; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 3s ease-in-out infinite alternate;">ELIGE EL QUE MAS SE ADAPTE A TÍ</h2>
                                         <p class="text-white mx-auto h5">
                                            Tu marca merece destacar. Elige entre nuestras soluciones web profesionales y consigue esa presencia online que tanto quieres.
                                         </p>
@@ -197,8 +223,9 @@
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Diseño amigable para móviles</li>
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Formulario de contacto</li>
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Configuración básica de SEO</li>
+                                                    <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Botón de Whatssapp</li>
                                                 </ul>
-                                                    <button class="btn btn-solid-lg btn-gradient">Comenzar</button>
+                                                    <a href="https://wa.me/573003990938" class="btn btn-solid-lg btn-gradient">Comenzar</a>
                                                
                                             </div>
                                         </div>
@@ -223,8 +250,10 @@
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Optimización avanzada de SEO</li>
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Integración con redes sociales</li>
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>3 meses de mantenimiento gratuito</li>
+                                                    <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Botón de Whatssapp</li>
+                                                    <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Ubicación en google Maps</li>
                                                 </ul>
-                                                <button class="btn btn-solid-lg btn-gradient">Comenzar</button>                               
+                                                <a href="https://wa.me/573003990938" class="btn btn-solid-lg btn-gradient">Comenzar</a>                          
                                                 </div>
                                         </div>
                                     </div>
@@ -246,9 +275,11 @@
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Integración de pasarela de pago</li>
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Sistema de gestión de productos</li>
                                                     <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Dashboard de análisis avanzado</li>
-                                                    <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>6 meses de mantenimiento gratuito</li>
+                                                    <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>4 meses de mantenimiento gratuito</li>
+                                                    <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Botón de Whatssapp</li>
+                                                    <li class="mb-2"><i class="fas fa-check" style="color: #17a2b8; margin-right: 8px;"></i>Ubicación en google Maps</li>
                                                 </ul>
-                                               <button class="btn btn-solid-lg btn-gradient">Comenzar</button>  
+                                               <a href="https://wa.me/3003990938" class="btn btn-solid-lg btn-gradient">Comenzar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +290,8 @@
                                 <!-- Preguntas Frecuentes -->
                                 <div class="row mt-6">
                                     <div class="col-12">
-                                        <h3 class="text-white text-center mb-5 mt-3" style="font-size: 2.5rem;">Preguntas Frecuentes</h3>
+                                        
+                        <h2 class="text-center mb-5 mt-3" style="color: #00c9db; letter-spacing: -0.5px; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 2s ease-in-out infinite alternate;">Preguntas frecuentes</h2>
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="card bg-secondary text-white border-0" style="box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
@@ -427,8 +459,8 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container" style="padding: 2.5rem; background: linear-gradient(145deg, rgba(70, 51, 175, 0.1), rgba(0, 201, 219, 0.05)); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
- <h2 style="color: #00c9db; letter-spacing: -0.5px; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 2s ease-in-out infinite alternate;">Desarrollo web innovador</h2>                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: #f1f1f8; letter-spacing: 0.2px;">
-                            <span style="color: #00c9db; font-weight: 600;">Utilizamos las últimas tecnologías</span> y prácticas de desarrollo web para crear sitios innovadores y eficientes. Desde el diseño responsivo con <span style="color: #00c9db; font-weight: 600;">HTML5 y CSS3</span>, hasta la implementación de JavaScript moderno y frameworks avanzados, aseguramos que tu sitio sea rápido, seguro y <span style="color: #00c9db; font-weight: 600;">preparado para el futuro</span>.
+                        <h2 style="color: #00c9db; letter-spacing: -0.5px; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 2s ease-in-out infinite alternate;">Desarrollo web innovador</h2>                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: #f1f1f8; letter-spacing: 0.2px;">
+                        <span style="color: #00c9db; font-weight: 600;">Enfocamos nuestro proceso de desarrollo</span> en la innovación constante, utilizando las últimas tecnologías y metodologías ágiles para crear sitios web que no solo cumplen con los estándares actuales, sino que los superan. Desde el diseño responsivo con <span style="color: #00c9db; font-weight: 600;">HTML5 y CSS3</span>, hasta la integración de JavaScript moderno y frameworks avanzados, garantizamos un código limpio, optimizado y escalable que asegura rendimiento excepcional y una experiencia de usuario incomparable.
                         </p>
                         <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1" style="text-transform: uppercase; letter-spacing: 1px; font-weight: 600; position: relative; overflow: hidden; transition: all 0.3s ease;">EXPLORA NUESTRO DESARROLLO WEB</a>
                     </div> <!-- end of text-container -->
@@ -446,7 +478,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-container" style="padding: 2.5rem; background: linear-gradient(145deg, rgba(70, 51, 175, 0.1), rgba(0, 201, 219, 0.05)); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
- <h2 style="color: #00c9db; letter-spacing: -0.5px; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 2s ease-in-out infinite alternate;">Técnologia de vanguardia</h2>                            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: #f1f1f8; letter-spacing: 0.2px;"><span style="color: #00c9db; font-weight: 600;">No solo construimos tu sitio web;</span> somos tu socio digital. Implementamos las últimas tecnologías web y mejores prácticas para garantizar que tu sitio no solo sea moderno hoy, sino que esté preparado para el futuro. <span style="color: #00c9db; font-weight: 600;">Desde optimización móvil hasta integraciones avanzadas</span>, construimos soluciones que perduran.</p>
+                            <h2 style="color: #00c9db; letter-spacing: -0.5px; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 2s ease-in-out infinite alternate;">Socio Digital Confiable</h2>                            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: #f1f1f8; letter-spacing: 0.2px;"><span style="color: #00c9db; font-weight: 600;">Como tu socio digital de confianza,</span> no solo desarrollamos tu sitio web, sino que te acompañamos en cada fase de tu crecimiento online. Ofrecemos soporte continuo, actualizaciones regulares y estrategias personalizadas para optimizar tu presencia digital. <span style="color: #00c9db; font-weight: 600;">Desde optimización móvil hasta integraciones avanzadas</span>, garantizamos que tu inversión evolucione y perdure en el tiempo.</p>
                             <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2" style="text-transform: uppercase; letter-spacing: 1px; font-weight: 600; position: relative; overflow: hidden; transition: all 0.3s ease;">EXPLORAR TECNOLOGÍAS</a>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
@@ -469,21 +501,19 @@
 				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
 			</div>
 			<div class="col-lg-6">
-				<h3>Establecimiento de Objetivos</h3>
+				<h3>Tecnologías de Desarrollo Web</h3>
 				<hr>
-                <p>Nuestros servicios de desarrollo web pueden ayudarte fácilmente a rastrear la evolución de tu negocio en línea si tomas el tiempo para configurarlo correctamente.</p>
-                <h4>Comentarios de Usuarios</h4>
-                <p>Esta es una gran herramienta que puede ayudarte a ahorrar tiempo y hacer tu vida más fácil. Y ayudará a mejorar tus niveles de productividad.</p>
-                <p>Definitivamente deberías probarlo cuando necesites una buena aplicación.</p>
+                <p>En Código Web, utilizamos las tecnologías más avanzadas para crear sitios web modernos, responsivos y de alto rendimiento. Nuestro stack tecnológico incluye HTML5, CSS3, JavaScript y frameworks líderes en la industria.</p>
+                <p>Cada proyecto se beneficia de un diseño adaptable, optimización de código y mejores prácticas para garantizar una experiencia excepcional en todos los dispositivos.</p>
 				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Diseño responsivo</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>CTAs distintivos</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Carrusel de galería de imágenes</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Formularios de contacto</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>Iconos FontAwesome</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Código bien estructurado</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-html5"></i></td><td>HTML5: Estructura semántica</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-css3-alt"></i></td><td>CSS3: Estilos y animaciones</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-js-square"></i></td><td>JavaScript: Interactividad y dinamismo</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-mobile-alt"></i></td><td>Responsive Design: Diseño adaptable</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-cogs"></i></td><td>Frameworks: Bootstrap y jQuery</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-rocket"></i></td><td>Optimización: Código limpio y eficiente</td></tr>
 				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
+				<a class="btn-solid-reg" href="#details">SALIR</a>
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
@@ -497,21 +527,16 @@
 				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
 			</div>
 			<div class="col-lg-6">
-				<h3>Entrada de Calendario</h3>
-				<hr>
-                <p>La función de entrada de calendario permite al usuario configurar sesiones de entrenamiento, meditación y relajación con facilidad.</p>
-                <h4>Comentarios de Usuarios</h4>
-                <p>Esta es una gran aplicación que puede ayudarte a ahorrar tiempo y hacer tu vida más fácil. Y ayudará a mejorar tus niveles de productividad.</p>
-                <p>Definitivamente deberías probarla cuando necesites una buena aplicación.</p>
+
 				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Diseño responsivo</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>CTAs distintivos</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Carrusel de galería de imágenes</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Formularios de contacto</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>Iconos FontAwesome</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Código bien estructurado</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-html5"></i></td><td>HTML5: Estructura semántica</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-css3-alt"></i></td><td>CSS3: Estilos y animaciones</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-js-square"></i></td><td>JavaScript: Interactividad y dinamismo</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-mobile-alt"></i></td><td>Responsive Design: Diseño adaptable</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-cogs"></i></td><td>Frameworks: Bootstrap y jQuery</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-rocket"></i></td><td>Optimización: Código limpio y eficiente</td></tr>
 				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+				<a class="btn-solid-reg" href="#details">SALIR</a>
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
@@ -593,9 +618,9 @@
                         <a class="btn-solid-lg" href="#contact">INICIA TU PROYECTO</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/LogoCopiloto01.png" alt="alternative">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="image-container ">
+                        <img class="width-300" src="images/copiloto1.png" alt="alternative">
                     </div> <!-- end of img-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -643,12 +668,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 style="color: #00c9db; letter-spacing: -0.5px; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 2s ease-in-out infinite alternate;">CONTACTANOS</h2>
+                    <h2 class="tracking-widest" style="color: #00c9db; font-weight: 700; font-size: 2.8rem; text-shadow: 0 0 20px rgba(0,201,219,0.8), 0 0 40px rgba(0,201,219,0.6); animation: glow 2s ease-in-out infinite alternate;">CONTACTANOS</h2>
                     <ul class="list-unstyled li-space-lg" style="font-size: 1.2rem; line-height: 1.8rem;">
-                        <li class="address">No dudes en llamarnos o usar el formulario de contacto a continuación</li>
+                        <li class="address">No dudes en llamarnos o escribirnos usando el formulario de contacto</li>
                         <li><i class="fas fa-map-marker-alt"></i>Ubicación: Remoto / Online</li>
-                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:+56912345678">+56 9 1234 5678</a></li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:felipe@desarrolloweb.com">felipe@desarrolloweb.com</a></li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:+3003990938">300 3990938</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:codigoweb24@gmail.com">codigoweb24@gmail.com</a></li>
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -695,63 +720,40 @@
     <!-- Footer -->
     <div class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center justify-content-center">
                 <div class="col-md-4">
                     <div class="footer-col">
                         <h4>Acerca de Código Web</h4>
                         <p>Somos un equipo profesional con amplia experiencia en la creación y mantenimiento de sitios web. Esperamos que te unas a nuestra familia y formes parte de nuestros proyectos exitosos.</p>
                     </div>
                 </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col middle">
-                        <h4>Enlaces Importantes</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Nuestros socios comerciales <a class="turquoise" href="#your-link">startupguide.com</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Lee nuestros <a class="turquoise" href="terms-conditions.html">Términos y Condiciones</a>, <a class="turquoise" href="privacy-policy.html">Política de Privacidad</a></div>
-                            </li>
-                        </ul>
+                
+            <div class="col-md-4">
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x" style="color: blue;"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x" style="color: green;"></i>
+                        </a>
+                    </span>
+                </div>
+            </div> <!-- end of col -->
+
+            <div class="col-md-4">
+                <div class="footer-col last">
+                    <h4>Ubicación</h4>
+                    <div style="width: 100%; height: 200px; overflow: hidden; border-radius: 8px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10588.514692079969!2d-75.56021242803934!3d6.235819627012515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1763766180618!5m2!1ses-419!2sco" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                        <h4>Redes Sociales</h4>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div> <!-- end of col -->
+                </div>
+            </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->
@@ -763,7 +765,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © Código Web - Plantilla de Página de Desarrollo Web por <a href="http://www.inovatik.com">Inovatik</a></p>
+                    <p class="p-small">Copyright © Código Web 2025</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -781,5 +783,10 @@
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573003990938" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
